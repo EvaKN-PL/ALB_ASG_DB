@@ -53,3 +53,45 @@ db_username = "app_admin"
 db_password = "very_secure_password"
 db_instance_class = "db.t3.micro"
 ```
+
+🚀 Deployment Instructions
+
+1. Initialization and Validation
+
+Run the following commands in the project's root directory:
+```
+# Initialize the backend, providers, and modules
+terraform init 
+
+# Validate the syntax and dependencies
+terraform validate 
+
+# Display the deployment plan (check what will be created)
+terraform plan
+```
+2. Applying the Configuration
+
+Execute the process to create the infrastructure. WARNING: This command deploys PAID resources (ALB, NAT Gateway, Multi-AZ RDS). Deployment takes approximately 15-20 minutes.
+
+```
+terraform apply --auto-approve
+```
+3. Verification (Post-Deployment)
+
+After successful completion of the apply process, you can check the exported values:
+
+```
+# DNS Address of the Load Balancer (application access)
+terraform output alb_dns_name
+
+# Database endpoint (used by the application)
+terraform output db_hostname
+```
+⚠️ Infrastructure Removal (Crucial for Cost Control)
+
+To avoid recurring charges, it is critical to completely destroy all resources after testing is complete.
+
+```
+# This command destroys all resources managed by this project
+terraform destroy --auto-approve
+```
