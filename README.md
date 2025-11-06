@@ -19,7 +19,7 @@ The infrastructure is divided into public and private subnets, ensuring separati
 
 ### Architecture Diagram
 
-<img width="889" height="525" alt="ALB-ASG-DB drawio(1)" src="https://github.com/user-attachments/assets/9df00d04-6542-4049-b06b-5dc198dbae68" />
+<img width="700" height="400" alt="ALB-ASG-DB drawio(1)" src="https://github.com/user-attachments/assets/9df00d04-6542-4049-b06b-5dc198dbae68" />
 
 🛠️ Requirements
 
