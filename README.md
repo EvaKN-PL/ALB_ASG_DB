@@ -28,3 +28,28 @@ The infrastructure is divided into public and private subnets, ensuring separati
   2. AWS Account: Configured with credentials (IAM User/Role) that have appropriate permissions.
 
   3. `terraform.tfvars` file: Input variables must be defined (see the Configuration section).
+
+⚙️ Variables Configuration
+
+Before deploying, complete the terraform.tfvars file in the root directory with your required values.
+
+```
+# Example minimal configuration in terraform.tfvars
+
+region = "eu-west-1"
+env_tag = "prod"
+
+# --- Network ---
+vpc_cidr = "10.0.0.0/16"
+public_subnet_cidrs = ["10.0.1.0/24", "10.0.2.0/24"]
+private_subnet_cidrs = ["10.0.10.0/24", "10.0.11.0/24"]
+
+# --- EC2/ASG ---
+instance_type = "t3.micro"
+key_name = "your-ssh-key-pair-name" # The name of your SSH key in AWS
+
+# --- RDS ---
+db_username = "app_admin"
+db_password = "very_secure_password"
+db_instance_class = "db.t3.micro"
+```
