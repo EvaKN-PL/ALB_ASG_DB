@@ -20,7 +20,7 @@ The infrastructure is divided into public and private subnets, ensuring separati
 ### Architecture Diagram
 
 The diagram below illustrates the network topology, including the separation across Availability Zones (AZ-A, AZ-B) and the traffic flow.
-```
+```mermaid
 graph LR
     subgraph Internet
         User(Użytkownik) --> ALB_DNS(Adres DNS ALB)
@@ -57,4 +57,4 @@ graph LR
     style ASG_B fill:#CCFFCC,stroke:#333
     style RDS_PR fill:#FFCC99,stroke:#333
     style RDS_ST fill:#FFCC99,stroke:#333
-```
+
