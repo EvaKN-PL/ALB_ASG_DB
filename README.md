@@ -95,3 +95,6 @@ To avoid recurring charges, it is critical to completely destroy all resources a
 # This command destroys all resources managed by this project
 terraform destroy --auto-approve
 ```
+📜 License
+
+This project is open-source under the MIT License. Feel free to use and adapt it for your own serverless needs.
