@@ -1,4 +1,4 @@
-aws_region = "eu-central-1"
+aws_region = "your_region"
 key_name = "key"
 instance_type = "t2.micro"
 vpc_cidr = "10.0.0.0/16"
@@ -8,4 +8,5 @@ db_instance_class = "db.t3.micro"
 db_username = "username"
 
 db_password = ""
+
 
