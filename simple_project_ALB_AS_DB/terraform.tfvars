@@ -7,4 +7,5 @@ private_subnet_cidrs = ["10.0.10.0/24", "10.0.11.0/24"]
 db_instance_class = "db.t3.micro"
 db_username = "username"
 
-db_password = "your_strong_password"
+db_password = ""
+
