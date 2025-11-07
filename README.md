@@ -50,7 +50,7 @@ key_name = "your-ssh-key-pair-name" # The name of your SSH key in AWS
 
 # --- RDS ---
 db_username = "app_admin"
-db_password = "very_secure_password"
+db_password = ""
 db_instance_class = "db.t3.micro"
 ```
 
