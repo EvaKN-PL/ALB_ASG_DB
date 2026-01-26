@@ -54,6 +54,20 @@ db_password = ""
 db_instance_class = "db.t3.micro"
 ```
 
+📝 Configuration Note
+
+  ```[!IMPORTANT] The terraform.tfvars file provided in this repository contains example data only. You must adjust these values to match your own environment and AWS configuration.```
+
+Security Best Practices
+
+For production environments, it is strongly recommended not to store sensitive information (like database passwords) in plain text files. Instead, consider the following methods:
+
+  -Environment Variables: Use the TF_VAR_name syntax to pass sensitive data securely.
+
+  -Secret Management: Integrate with AWS Secrets Manager or HashiCorp Vault.
+
+  -Input Prompts: Omit sensitive values from your files to be prompted for them during terraform apply.
+
 🚀 Deployment Instructions
 
 1. Initialization and Validation
